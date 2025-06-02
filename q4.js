@@ -39,12 +39,17 @@ const movies = [
 console.log("Movie Array:");
 console.log(movies);
 
+// Q4.3 Sort the array in “ascending” order by Movie ID.
+// Remember: Movie ID must be unique for each movie and not sorted in the array.
 
-// Q4.4 Implement at least one search algorithm (either sequential search or binary search) according to the requirements in the task description.
-
-// Before using binary search, sort the movies array by ID
 movies.sort((a, b) => a.id - b.id);
 
+// Print the sorted array
+console.log("Sorted Movie Array by ID:");
+console.log(movies);
+
+
+// Q4.4 Implement at least one search algorithm (either sequential search or binary search) according to the requirements in the task description.
 // Binary search to find movie by ID
 function binarySearchMovieById(moviesArray, targetId) {
   let left = 0;
@@ -66,9 +71,9 @@ function binarySearchMovieById(moviesArray, targetId) {
   return null; // Not found
 }
 
-// Example Test - existing movie ID
+//  Example Test-existing movie ID
 console.log("Binary Search Test:");
-let targetId1 = 109;
+let targetId1 = 109; // Replace with a real ID in your array
 let result1 = binarySearchMovieById(movies, targetId1);
 if (result1) {
   console.log(`Found Movie with ID ${targetId1}:`, result1);
