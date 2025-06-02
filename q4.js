@@ -1,4 +1,5 @@
-// Q4.4 Implement at least one search algorithm (either sequential search or binary search) according to the requirements in the task description.
+// Q4.4 Implement at least one search algorithm (either sequential search or binary search) according to the requirements in the task description. 
+//Final 4.4 version with minor update
 
 // Binary search to find movie by ID
 function binarySearchMovieById(moviesArray, targetId) {
